@@ -1,1 +1,2 @@
-# hodges_k_midterm
+# Mid Term Project
+## Katie Hodges
