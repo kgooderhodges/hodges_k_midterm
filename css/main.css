@@ -2,21 +2,41 @@
 /*CSS Document*/
 
 body {
-  background-color: #da291c;
+  background-color: #e82e22;
   font-family: Helvatica, Arial, sans-serif;
   font-weight: 400;
   margin: 0;
   color: #333;
 }
 
+h2 {
+  margin: 5px 300px 20px 5px;
+  font-family: 'Cabin Condensed', sans-serif, arial;
+  font-size: 70px;
+  text-align: left;
+  text-shadow: 1px 1px 2px ;
+  justify-content: flex-start;
+}
+
 p {
   font-family: 'Work Sans', sans-serif;
-  margin: 40px 20px 10px 20px;
+  margin: 20px 30px 10px;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   color: #333;
   text-align: left;
+}
+
+p.thick {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.first-cap::first-letter {
+	font-size: 2em;
+	float: left;
+  margin-top: 0;
 }
 
 .hidden {
@@ -31,7 +51,7 @@ p {
 
 .nav {
   list-style-type: none;
-  font-family: /*"Veneer",*/'Bahiana', cursive, sans-serif; arial, sans-serif;
+  font-family: 'Bahiana', cursive, sans-serif; arial, sans-serif;
   justify-content: center;
   margin: 0 auto;
   padding: 0;
@@ -41,33 +61,27 @@ p {
 .nav li a {
   display: block;
   font-family: 'Bahiana', cursive, san-serif;
-  font-size: 50px;
+  font-size: 70px;
   color: white;
+  text-shadow: 2px 2px 3px black;
   padding: 20px 16px;
   text-decoration: none;
-}
-
-h2 {
-  font-family: 'Cabin Condensed', sans-serif;
-  font-size: 70px;
-  justify-content: left;
 }
 
 .containerTitle {
   margin: 0;
   height: 70px;
-  width: 1070px;
+  width: 1346px;
   padding-left: 10px;
-  text-align: left;
+  justify-content: flex-start;
   display: inline-block;
   flex-wrap: wrap;
-  background-color:#da291c;
   color: white;
 }
 
 /* Main Nav */
 #heroImg {
-  background-image: url('../images/redStripe_LockUp.jpg');
+  background-image: url('../images/redStripe_LockUp.png');
   width: 100%;
   min-height: 500px;
   background-position: center;
@@ -98,13 +112,15 @@ h2 {
 /* End Main Nav */
 
 /* Start Footer */
+
 #mainFooter {
+  font-family: 'Work Sans', sans-serif; 
 	font-size: 14px;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin: 0;
 	display: flex;
 	flex-direction: row;
-  	justify-content: flex-start;
+  justify-content: flex-start;
+  background-image:linear-gradient(#e82e22, #b02318, #861108);
 }
 
 #footerNav {
@@ -112,68 +128,73 @@ h2 {
 }
 
 #copyRight {
-	margin-left: auto;
-	width: 310px;
-}
-/*#footer {
-  width: 100%;
-  height: 150px;
-  margin: 0;
-  display: inline-block;
-	background-image:linear-gradient(#da291c, #b02318, #861108);
-}
-
-#footerNav {
+  margin-left: auto;
   text-align: left;
-  margin: 0 auto;
-  padding: 20px 10px;
-  list-style: row;
-  display: inline-block;
-  
+	width: 340px;
 }
 
-#footerNav ul {
+ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: ;
 }
 
-#footer li {
+li {
   float: left;
   }
 
-
-#footerNav li a {
-  font-size: 30px;
-  padding: 14px 16px;
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 15px 5px;
   text-decoration: none;
-  flex-direction: row;
-  justify-content: flex-start;
-}*/
+}
 
-
+li a:hover {
+  border-bottom: 2px solid black;
+}
 /* End Footer */
 
 /* Start Main Content for Index */
 .mainContainer {
   margin: 0;
-  max-width: 1100px;
-  height: 1160px;
+  max-width: 1346px;
+  height: auto;
   text-align: left;
   display: inline-block;
   flex-wrap: wrap;
   background-color:whitesmoke;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 4px 12px 8px #861108;
 }
 /* End Main Content */
 
 /* Start Promo Images Beer page */
+
+.imgEventContainer {
+  margin: 0;
+  padding: 15px 15px 15px 15px:
+  max-width: 1346px;
+  height: auto;
+  justify-content: center;
+  display:inline-block;
+  flex-wrap: wrap;
+  background-color: whitesmoke;
+  border-bottom: 1px solid #333;
+}
+
 .promoImg {
   width: 650px;
   height:500px;
-  margin: 10px 30px 10px 10px;
-  text-align: left;
+  margin: 0;
+  text-align: center;
   display: inline-block;
   background-color: whitesmoke;
+  border-bottom: 1px solid #333;
 }
 
 .beerImg {
@@ -186,31 +207,26 @@ h2 {
   padding: 5px;
   text-align: left;
 }
-
-.first-cap::first-letter {
-	font-size: 2em;
-	float: left;
-	margin-top: 0;
-}
 /* End Promo Images */
 
 /* Start Events Page */
 
 .events {
-  width: 1100px;
+  max-width: 1346px;
   min-height: 350px;
-  margin: 0px 30px 10px 10px;
+  margin: 0;
+  padding: 0px 30px 10px 10px;
   font-family: 'Playfair Display', serif;
   text-align: left;
-  border-bottom: 1px solid, rgb(196, 188, 188);
-  display: inline-block;
+  border-bottom: 1px solid #333;
+  display: block;
   background-color: whitesmoke;
 }
 
 .imgRight {
 	width: 30%;
 	float: right;
-  padding: 20px 20px 10px 20px;
+  padding: 20px 30px 10px 20px;
   margin-top: 30px;
 }
 
