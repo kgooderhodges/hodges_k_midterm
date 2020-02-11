@@ -19,7 +19,7 @@ h2 {
 }
 
 p {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif, arial;
   margin: 20px 30px 10px;
   font-weight: 400;
   font-size: 16px;
@@ -32,7 +32,15 @@ p.thick {
   font-weight: bold;
   font-size: 20px;
 }
+p.thickCenter {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
 
+p.center {
+  text-align: center;
+}
 .first-cap::first-letter {
 	font-size: 2em;
 	float: left;
@@ -90,11 +98,7 @@ p.thick {
   position: relative;
 }
 
-#navContainer {
 
-  position: absolute;
-  margin: 0;
-}
 
 #mainNav {
 	margin: 0;
@@ -109,10 +113,12 @@ p.thick {
   width: 772px;
   height: 85px;
 }
+.nav li a:hover {
+  border-top: 2px solid black;
+}
 /* End Main Nav */
 
 /* Start Footer */
-
 #mainFooter {
   font-family: 'Work Sans', sans-serif; 
 	font-size: 14px;
@@ -167,14 +173,24 @@ li a:hover {
   display: inline-block;
   flex-wrap: wrap;
   background-color:whitesmoke;
-  border: 1px solid;
   padding: 10px;
   box-shadow: 4px 12px 8px #861108;
 }
+
+.indexAboutContainer {
+  margin: 0;
+  padding: 15px 15px 15px 15px:
+  max-width: 1346px;
+  height: auto;
+  justify-content: center;
+  display: block;
+  flex-wrap: wrap;
+  background-color: whitesmoke;
+  border-bottom: 1px solid #333;
+}
 /* End Main Content */
 
-/* Start Promo Images Beer page */
-
+/* Start Beer page */
 .imgEventContainer {
   margin: 0;
   padding: 15px 15px 15px 15px:
@@ -184,7 +200,6 @@ li a:hover {
   display:inline-block;
   flex-wrap: wrap;
   background-color: whitesmoke;
-  border-bottom: 1px solid #333;
 }
 
 .promoImg {
@@ -210,6 +225,18 @@ li a:hover {
 /* End Promo Images */
 
 /* Start Events Page */
+.beerContainer {
+  margin: 0;
+  max-width: 1346px;
+  height: auto;
+  text-align: left;
+  display: inline-block;
+  flex-wrap: wrap;
+  background-color:whitesmoke;
+  border: 1px solid whitesmoke;
+  padding: 10px;
+  box-shadow: 4px 12px 8px #861108;
+} 
 
 .events {
   max-width: 1346px;
@@ -230,5 +257,110 @@ li a:hover {
   margin-top: 30px;
 }
 
+#floatRight {
+	height:50%;
+  float: right;
+  align-items: flex-end;
+  padding: 20px 30px 10px 20px;
+  margin-top: 0 auto;
+}
+
+.imgLeft {
+	width: 20%;
+	float: left;
+  padding: 20px 30px 10px 20px;
+}
+
+.imgCenter {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+	justify-content: center;
+  padding: 10px 20px;
+}
 /* End events page */
 
+/* Start Contact Page */
+.contactContainer {
+  margin: 0;
+  width: 1346px;
+  height: auto;
+  justify-content: center;
+  display: inline-block;
+  background-color:whitesmoke;
+  padding: 10px;
+  box-shadow: 4px 12px 8px #861108;
+}
+
+#comments {
+	width: 360px;
+	height: 200px;
+}
+
+#contactText {
+	font-size: 14px;
+  margin: 20px;
+  
+	
+}
+#formBox {
+  display: inline-block;
+  flex-flow: row nowrap;
+  width: 30%;
+
+}
+
+label, input, textarea {
+  font-family: 'Work Sans', sans-serif, arial;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 5px;
+  padding: 5px;
+}
+
+input, textarea {
+  box-shadow: 4px 8px 6px rgb(204, 204, 204);
+}
+
+/* End Contact Page */
+
+/* Start Animation */
+
+div#move {
+  width: 500px;
+  position: relative;
+  animation: move 7s ease-in-out 1s infinite alternate backwards;
+}
+
+@keyframes move {
+  0% {
+      left: 45%;
+      top: 330px;
+  }
+  
+  50% {
+      left: 71%;
+      top: 330px;
+  }
+
+     100% {
+      left: 45%;
+      top: 330px;
+  }
+}
+
+div#Cap {
+  margin: 2px;
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  background-image: url(../images/TucksCap.svg);
+  animation: Cap 2s infinite ease-in-out alternate-reverse;
+
+}
+
+@keyframes Cap {
+  0% {transform: rotate(0deg)}
+  100% {transform: rotate(360deg);}
+}
+/* End Animation */
